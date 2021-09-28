@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:space_book/loginScreen.dart';
 
 class signupScreen extends StatefulWidget {
   const signupScreen({Key? key}) : super(key: key);
@@ -75,7 +76,7 @@ class _signupScreenState extends State<signupScreen> {
                       ),
                     ),
 
-
+                    //signup button
                     Container(
                       width: 120.0,
                       margin: EdgeInsets.only(left: 10.0, top: 60.0),
@@ -84,7 +85,12 @@ class _signupScreenState extends State<signupScreen> {
                         shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(18.0),
                         ),
-                        onPressed: (){},
+                        onPressed: (){
+                          Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                                return loginScreen();
+                            }
+                          ));
+                        },
                         child: Text("Sign -up", style: TextStyle(color: Colors.white),),
 
                       ),

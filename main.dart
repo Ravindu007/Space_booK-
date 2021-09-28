@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:space_book/homeScreen.dart';
 import 'package:space_book/landingPage.dart';
 //import 'package:space_book/landingPage.dart';
 import 'package:space_book/loginScreen.dart';
@@ -11,6 +12,6 @@ main(){
 class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return signupScreen();
+    return homeScreen();
   }
 }

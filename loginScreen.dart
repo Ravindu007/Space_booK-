@@ -60,7 +60,12 @@ class _loginScreenState extends State<loginScreen> {
                             shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(18.0),
                             ),
-                             onPressed: (){},
+                            onPressed: (){
+                              Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                                return loginScreen();
+                              }
+                              ));
+                            },
                              child: Text("Login", style: TextStyle(color: Colors.white),),
 
                           ),
